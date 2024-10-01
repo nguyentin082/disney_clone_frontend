@@ -1,5 +1,4 @@
 import { FaIndustry } from 'react-icons/fa6';
-import customStyles from '../constants/styleCheck';
 import DisneyLogo from '../assets/images/disney.png';
 import PixarLogo from '../assets/images/pixar.png';
 import MarvelLogo from '../assets/images/marvel.png';
@@ -10,23 +9,8 @@ import PixarVideo from '../assets/videos/pixar.mp4';
 import MarvelVideo from '../assets/videos/marvel.mp4';
 import StarwarsVideo from '../assets/videos/star-wars.mp4';
 import NationGeoVideo from '../assets/videos/national-geographic.mp4';
-import { useRef } from 'react';
 
 function Productions() {
-    const videoRef = useRef<HTMLVideoElement>(null); // Create a ref for the video element
-
-    const handleMouseEnter = () => {
-        if (videoRef.current) {
-            videoRef.current.play(); // Play the video on hover
-        }
-    };
-
-    const handleMouseLeave = () => {
-        if (videoRef.current) {
-            videoRef.current.pause(); // Pause the video when hover ends
-        }
-    };
-
     return (
         <div className="mb-10">
             {/* Title */}
